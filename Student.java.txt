@@ -1,0 +1,73 @@
+package inheritanceTask;
+
+public class Student extends User {
+	private int Id;
+	private String name;
+	private String lastName;
+	private String emailAdres;
+	private String password;
+	private String takenCourses;
+	
+	
+public Student() {
+		
+	}
+	
+ public Student(int id, String name, String lastName, String emailAdres, String password,String takenCourses) { 
+	Id = id;
+	this.name = name;
+	this.lastName = lastName;
+	this.emailAdres = emailAdres;
+	this.password = password;
+	this.takenCourses = takenCourses;
+ }
+ 
+
+public String getName() {
+	return name;
+}
+
+public void setName(String name) {
+	this.name = name;
+}
+
+public String getLastName() {
+	return lastName;
+}
+
+public void setLastName(String lastName) {
+	this.lastName = lastName;
+}
+
+public String getEmailAdres() {
+	return emailAdres;
+}
+
+public void setEmailAdres(String emailAdres) {
+	this.emailAdres = emailAdres;
+}
+
+public String getPassword() {
+	return password;
+}
+
+public void setPassword(String password) {
+	this.password = password;
+}
+
+public int getId() {
+	return Id;
+}
+
+public String getTakenCourses (){
+	return takenCourses;
+}
+public void setTakenCourses(String takenCourses) {
+	this.takenCourses = takenCourses;
+}
+
+public String getTakenHomework(Instructor instructor) {
+	return instructor.getTaskGiven();
+}
+
+}

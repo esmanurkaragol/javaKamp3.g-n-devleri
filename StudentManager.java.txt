@@ -1,0 +1,28 @@
+package inheritanceTask;
+
+public class StudentManager {
+	public void add(Student student) {
+		System.out.println(student.getName() + student.getLastName() + "Kaydedildi.");
+	}
+	
+	public void update(Student student) {
+		System.out.println(student.getName() + student.getLastName() + "Güncellendi.");
+	}
+	
+	public void delete(Student student) {
+		System.out.println(student.getName() + student.getLastName() + "Silindi");
+	}
+		
+	public void takeCourse(String courseName) {
+		System.out.println("Kurs Alındı: " + courseName);
+	}
+	
+	public void getTask(Instructor instructor) {
+	System.out.println("Yeni eklenen ödev : " + instructor.getCoursesGiven());
+	}
+	
+	
+	
+	
+	}
+

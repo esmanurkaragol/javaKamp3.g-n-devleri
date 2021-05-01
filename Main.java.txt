@@ -1,0 +1,19 @@
+package inheritanceTask;
+
+
+public class Main {
+	public static void main(String[] args) {
+		
+		Student student = new Student (1, "Esmanur", "Karagöl", "esmanurmail@gmail.com", "sifre:123456","Java");
+		Instructor instructor = new Instructor (2, "Engin", "Demiroğ", "MCT,PMP,ITIL", "C# Angular, Java React, Programlamaya Giriş", "ödevler","şifreyaz");
+		
+		
+		StudentManager studentManager = new StudentManager();
+		InstructorManager ınstructorManager = new InstructorManager();
+		ınstructorManager.addCourse("Pyhton");
+		studentManager.getTask(instructor);
+	
+	}
+
+
+}

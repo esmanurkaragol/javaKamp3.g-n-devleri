@@ -1,0 +1,17 @@
+package inheritanceTask;
+
+public class UserManager {
+	
+public  void  add () {
+		
+	}
+	
+	public  void  delete () {
+		
+	}
+	
+	public void update () {
+		
+	}
+
+}

@@ -1,0 +1,55 @@
+package inheritanceTask;
+
+public class Instructor extends User {
+	private int Id;
+	private String name;
+	private String lastName;
+	private String certificate;
+	private  String coursesGiven;
+	private  String taskGiven;
+	private String password;
+	
+public Instructor() {
+		
+	}
+	
+ public Instructor(int id, String name, String lastName, String certificate,String coursesGiven, String taskGiven,String Password) {
+	super();
+	Id = id;
+	this.name = name;
+	this.lastName = lastName;
+	this.certificate = certificate;
+	this.coursesGiven = coursesGiven;
+	this.taskGiven = taskGiven;
+	this.password = password;
+}
+
+public int getId() {
+	return Id;
+}
+
+public String getName() {
+	return name;
+}
+
+public String getLastName() {
+	return lastName;
+}
+
+public String getCertificate() {
+	return certificate;
+}
+
+public String getCoursesGiven() {
+	return coursesGiven;
+}
+
+public String getTaskGiven() {
+	return taskGiven;
+}
+
+public String getPassword () {
+	return password;
+}
+
+}
